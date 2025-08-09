@@ -4,18 +4,15 @@ import urllib.request
 import os
 import time
 
-# Configuration
 url = 'http://192.168.43.219/cam-hi.jpg'
 whT = 320
 confThreshold = 0.5
 nmsThreshold = 0.3
 
-# Function to get output layer names
 def get_output_layers(net):
     layerNames = net.getLayerNames()
     return [layerNames[i-1] for i in net.getUnconnectedOutLayers().flatten()]
 
-# Load class names
 classesfile = r"C:\Users\amrit\Downloads\coco.names"
 if not os.path.exists(classesfile):
     raise FileNotFoundError(f"{classesfile} not found! Download it first.")
@@ -23,7 +20,6 @@ if not os.path.exists(classesfile):
 with open(classesfile, 'rt') as f:
     classNames = f.read().rstrip('\n').split('\n')
 
-# Load YOLO model
 modelConfig = r"C:\Users\amrit\Downloads\yolov3.cfg"
 modelWeights = r"C:\Users\amrit\Downloads\yolov3.weights"
 
@@ -144,5 +140,6 @@ while True:
     cv2.imshow('ESP32-CAM Object Detection', im)
     if cv2.waitKey(1) == ord('q'):
         break
+
 
 cv2.destroyAllWindows()
