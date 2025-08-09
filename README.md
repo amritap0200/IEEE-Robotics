@@ -27,7 +27,7 @@ Processing:	ESP32Cam (Optional)
 
 Power:	5V 2A DC
 
-<img width="1262" height="500" alt="deepseek_mermaid_20250809_afb6d3" src="https://github.com/user-attachments/assets/cae07a88-600c-45a8-8c2a-9173582b3567" />
+<img width="1200" height="1200" alt="deepseek_mermaid_20250809_afb6d3" src="https://github.com/user-attachments/assets/cae07a88-600c-45a8-8c2a-9173582b3567" />
 
 ### Robotics Vision Module
 ```c
