@@ -14,14 +14,20 @@ A modular robotics platform integrating:
 
 ## Core Technical Specifications
 🛠️ **Hardware Specifications**
+
 *Component	Specification*
+
 Microcontroller:	Arduino Uno R3
+
 Sensors:	2x HC-SR04 Ultrasonic (20-400cm)
+
 Actuators:	SG90 Servo (180° range)
+
 Processing:	ESP32Cam (Optional)
+
 Power:	5V 2A DC
 
-<img width="1262" height="2372" alt="deepseek_mermaid_20250809_afb6d3" src="https://github.com/user-attachments/assets/cae07a88-600c-45a8-8c2a-9173582b3567" />
+<img width="1262" height="500" alt="deepseek_mermaid_20250809_afb6d3" src="https://github.com/user-attachments/assets/cae07a88-600c-45a8-8c2a-9173582b3567" />
 
 ### Robotics Vision Module
 ```c
