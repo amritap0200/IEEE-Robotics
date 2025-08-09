@@ -1,12 +1,9 @@
 import cv2
 import os
 
-# ========== CONFIGURATION ==========
-# Set your paths here (modify these to your actual file paths)
-CASCADE_PATH = r"C:\Users\amrit\Downloads\haarcascade_frontalface_default.xml"
-PREDEFINED_IMAGE_PATH = r"C:\Users\amrit\Downloads\MP.jpg"  # Change this to your image path
-PREDEFINED_VIDEO_PATH = r"C:\Users\amrit\Downloads\3248275-uhd_3840_2160_25fps.mp4"  # Change this if you want a default video
-# ===================================
+CASCADE_PATH = r"cascade_download_path"
+PREDEFINED_IMAGE_PATH = r"image_path" 
+PREDEFINED_VIDEO_PATH = r"vid_path" 
 
 def load_cascade():
     if not os.path.isfile(CASCADE_PATH):
@@ -129,3 +126,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
